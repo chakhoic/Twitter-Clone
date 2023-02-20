@@ -2,8 +2,9 @@ var express = require('express');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 require('./models/User');
-require('./config/passport'); // <-- ADD THIS LINE
-const passport = require('passport'); // <-- ADD THIS LINE
+require('./models/Tweet');
+require('./config/passport'); 
+const passport = require('passport'); 
 
 const cors = require('cors');
 const csurf = require('csurf');
